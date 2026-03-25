@@ -133,7 +133,7 @@ html, body {
     font-size: 24px;
 }
 
-#kiosk-liste{
+.kiosk-liste{
     margin-top: 4vh;
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
@@ -157,6 +157,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border: #008ca8 1vh solid;
 }
 .kiosk-bildet{
   
@@ -179,7 +180,7 @@ html, body {
     font-size: 24px;
 }
 
-#info{
+.info{
     
     display: flex;
     flex-direction: column;
@@ -205,6 +206,7 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border: #016d82 7px solid;
 }
 
 
@@ -212,7 +214,7 @@ html, body {
     border-radius: 1vh;
     background-color: #02a1c1;
     margin: 1vh;
-
+    border: #007e97 7px solid;
     height: 5vh;
     width: 20vw;
     grid-template-columns: repeat(1, minmax(300px, 1fr));
@@ -235,7 +237,7 @@ html, body {
 .dagens-mat{
     border-radius: 2vh;
     width: 40vw;
-  
+    border: #017289 7px solid;
     background-color: #008DA8;
     display: flex;
     margin-top: 8vh;
@@ -275,7 +277,7 @@ html, body {
     .main-varmamt{
         flex-direction: column;
     }
-    #info{
+    .info{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -334,7 +336,7 @@ html, body {
     .main{
         flex-direction: column-reverse;
     }
-    #info{
+    .info{
         display: flex;
         flex-direction: column;
         justify-content: center;

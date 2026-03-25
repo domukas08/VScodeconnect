@@ -1,4 +1,3 @@
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -23,10 +22,28 @@ const db = getFirestore();
 import { addDoc, collection, updateDoc, deleteDoc, doc, setDoc, getDoc, getDocs } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
 
 
-await setDoc(
-  doc(db, "varm-mat", "mandag"), {
-    matrett: "lasagne",
-    ingredienser: "ost, kjøttdeig, løk, tomat, kvitløk, chilli, pasta, krydder",
-    alergender: "G, L",
-    pris: 45
-});
+
+
+
+
+
+async function displayData() {
+  // Henter alle dokumentene fra "elever"-samlingen
+  const querySnapshot = await getDocs(collection(db, "varm-mat"));
+ 
+  // Henter referansen til <div>-elementet
+  const dataDisplay = document.getElementById("dataDisplay");
+ 
+  // Looper gjennom hvert dokument i samlingen
+  querySnapshot.forEach((doc) => {
+    const data = doc.data();
+ 
+    // Legger til HTML-innhold for hvert dokument
+    dataDisplay.innerHTML += `
+    <h1>${data.matrett} </h1>
+    <img src="${data.bildet}" alt="bildet av ${data.matrett}">
+    `;
+  });
+}
+
+displayData()

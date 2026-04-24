@@ -13,12 +13,46 @@ html, body {
     height: 10vh;
     width: 100%;
     background-color: #57ACBC;
+    display: flex;
+    justify-content: space-between;
     
 }
 
+.toppknapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.toppknapper a:hover{
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    background-color: #005f72;
+    transition: color 0.2s ease;
+    color: white; 
+}
 .logo{
     height: 80%;
     margin: 1vh;
+}
+
+.toppknapp{
+    
+    margin-right: 3vh;
+    color: black;
+    text-decoration: none;
+    color: inherit;
+    height: 8vh;
+    width: 9vw;
+    margin-bottom: -0vw;
+    font-size: 3vh;
+    background-color: #008DA8;
+    border-radius: 2vh;
+    border: #007c95 5px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main{
@@ -43,6 +77,7 @@ html, body {
     height: 50vh;
     margin: 100px;
     border-radius: 20px;
+    
 }
 .hoved-tekst{
     
@@ -83,6 +118,7 @@ html, body {
     font-size: 6vh;
     background-color: #008DA8;
     border-radius: 20px;
+    border: #007c95 1vh solid;
 }
 .knapp-2{
     text-decoration: none;
@@ -97,16 +133,22 @@ html, body {
     font-size: 6vh;
     background-color: #008DA8;
     border-radius: 20px;
+    border: #007c95 1vh solid;
     
 }
 
 .knapper a:hover{
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.2s ease;
     background-color: #005f72;
-    transition: color 0.6s ease;
+    transition: color 0.2s ease;
     color: white; 
     
+}
+
+.links{
+    color: white;
+    font-size: 3vh;
 }
 
 .footer{
@@ -129,7 +171,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid #008DA8;
     font-size: 24px;
 }
 
@@ -157,7 +199,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: #008ca8 1vh solid;
+    border: #0292af 1vh solid;
 }
 .kiosk-bildet{
   
@@ -253,7 +295,7 @@ html, body {
 
 }
 .varmtekst{
-    border-left: white solid 0.5vh;
+    border-left: #01687c 0.5vh solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

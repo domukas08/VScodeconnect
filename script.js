@@ -147,7 +147,7 @@ await updateDoc(
     pris: 27
 });
 */
-await setDoc(
+/* await setDoc(
   doc(db, "kiosk-mat", "urge"), {
     navn: "urge",
     bildet: "https://engrosnett.no/image/kalde-drikker/mineralvann/2642791-2642791.jpg?v=638181011918700000",
@@ -178,7 +178,7 @@ await setDoc(
     bildet: "https://bilder.ngdata.no/7037610059930/meny/large.jpg",
     pris: 27
 });
-
+*/
 
 async function displayData() {
   // Henter alle dokumentene fra "elever"-samlingen

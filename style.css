@@ -55,9 +55,7 @@ html, body {
     align-items: center;
 }
 
-.inivibutton{
-    
-}
+
 .main{
     height: 100%;
     
@@ -222,7 +220,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items:end;
-    font-size: 2em;
+    font-size: 1.3vw;
 }
 
 .info{

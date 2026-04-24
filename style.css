@@ -46,7 +46,7 @@ html, body {
     height: 8vh;
     width: 9vw;
     margin-bottom: -0vw;
-    font-size: 3vw;
+    font-size: 1vw;
     background-color: #008DA8;
     border-radius: 2vh;
     border: #007c95 5px solid;
@@ -219,7 +219,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items:end;
-    font-size: 24px;
+    font-size: 2vw;
 }
 
 .info{

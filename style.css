@@ -46,7 +46,7 @@ html, body {
     height: 8vh;
     width: 9vw;
     margin-bottom: -0vw;
-    font-size: 1vw;
+    font-size: 1.5em;
     background-color: #008DA8;
     border-radius: 2vh;
     border: #007c95 5px solid;
@@ -55,6 +55,9 @@ html, body {
     align-items: center;
 }
 
+.inivibutton{
+    
+}
 .main{
     height: 100%;
     
@@ -219,7 +222,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items:end;
-    font-size: 2vw;
+    font-size: 2em;
 }
 
 .info{

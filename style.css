@@ -314,6 +314,11 @@ html, body {
     align-items: center;
 }
 
+.href{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 @media (width <= 1024px){
     .main{

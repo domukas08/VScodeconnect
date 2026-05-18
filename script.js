@@ -13,7 +13,7 @@ const firebaseConfig = {
   storageBucket: "kantine-d8545.firebasestorage.app",
   messagingSenderId: "991632546037",
   appId: "1:991632546037:web:4b012359193507572b0dbc"
-  };
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -188,16 +188,19 @@ async function displayData() {
   const dataDisplay = document.getElementById("dataDisplay");
  
   // Looper gjennom hvert dokument i samlingen
-  querySnapshot.forEach((doc) => {
-    const data = doc.data();
+  querySnapshot.forEach((docSnap) => {
+    const data = docSnap.data();
+    const id = docSnap.id;
  
     // Legger til HTML-innhold for hvert dokument
     dataDisplay.innerHTML += `
-    <div class="dagens-mat">
-      <img src=${data.bildet} class="varm-bildet">
-      <h3 class="varmtekst"> ${data.ingredienser} </h3>
-      <h3 class="alergi-kort"> ${data.alergender} </h3>
-    <div>
+    <a href="bok.html?id=${id}" class="href">
+      <div class="dagens-mat">
+        <img src=${data.bildet} class="varm-bildet">
+        <h3 class="varmtekst"> ${data.ingredienser} </h3>
+        <h3 class="alergi-kort"> ${data.alergender} </h3>
+      <div>
+    </a>
     `;
   });
 }
@@ -212,24 +215,27 @@ async function kioskdisplayData() {
   const kioskdataDisplay = document.getElementById("kioskdataDisplay");
  
   // Looper gjennom hvert dokument i samlingen
-  querySnapshot.forEach((doc) => {
-    const data = doc.data();
+  querySnapshot.forEach((docSnap) => {
+    const data = docSnap.data();
+    const id = docSnap.id;
  
     // Legger til HTML-innhold for hvert dokument
     kioskdataDisplay.innerHTML += `
-    <div class="kiosk-mat">
-      <div class="kiosk-bildet">
-        <img src=${data.bildet} class="kiosk-mat-bildet">
-      </div>
-      <div class="kiosk-tekst">
-        <h3>${data.navn}</h3>
-      </div>
-      <div class="kiosk-tekst">
-        <h3>---</h3>
-        <h3>${data.pris}</h3>
-        <h3>KR</h3>
-      </div>
-    <div>
+    <a href="bok.html?id=${id}" class="href">
+      <div class="kiosk-mat">
+        <div class="kiosk-bildet">
+          <img src=${data.bildet} class="kiosk-mat-bildet">
+        </div>
+        <div class="kiosk-tekst">
+          <h3>${data.navn}</h3>
+        </div>
+        <div class="kiosk-tekst">
+          <h3>---</h3>
+          <h3>${data.pris}</h3>
+          <h3>KR</h3>
+        </div>
+      <div>
+    </a>
     `;
   });
 }

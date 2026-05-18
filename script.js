@@ -194,13 +194,13 @@ async function displayData() {
  
     // Legger til HTML-innhold for hvert dokument
     dataDisplay.innerHTML += `
-    <a href="bok.html?id=${id}" class="href">
+    
       <div class="dagens-mat">
         <img src=${data.bildet} class="varm-bildet">
         <h3 class="varmtekst"> ${data.ingredienser} </h3>
         <h3 class="alergi-kort"> ${data.alergender} </h3>
       <div>
-    </a>
+    
     `;
   });
 }
@@ -221,7 +221,7 @@ async function kioskdisplayData() {
  
     // Legger til HTML-innhold for hvert dokument
     kioskdataDisplay.innerHTML += `
-    <a href="bok.html?id=${id}" class="href">
+    
       <div class="kiosk-mat">
         <div class="kiosk-bildet">
           <img src=${data.bildet} class="kiosk-mat-bildet">
@@ -235,7 +235,7 @@ async function kioskdisplayData() {
           <h3>KR</h3>
         </div>
       <div>
-    </a>
+    
     `;
   });
 }
